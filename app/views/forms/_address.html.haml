@@ -7,7 +7,7 @@
   - if @location[:address].present?
     %fieldset#address
       = "Street"
-      = text_field_tag "street", @location.address.street, maxlength: 255, class: "span5"
+      = text_field_tag "street", @location.address.street_1, maxlength: 255, class: "span5"
       %br
       = "City"
       = text_field_tag "city", @location.address.city, maxlength: 255
